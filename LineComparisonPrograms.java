@@ -28,13 +28,17 @@ public class LineComparisonPrograms {
 		b2 = sc.nextDouble();
 		LengthOfLineTwo = Math.sqrt(((a2 - a1) * (a2 - a1)) + ((b2 - b1) * (b2 - b1)));
 		System.out.println("Length of line two is " + LengthOfLineTwo);
-// Length comparison
+//  Using Java equals method to check equality of 2 Lengths is preferable
+//Using Java compareTo method to compare 2 Lengths is preferable		
 		if (LengthOfLineOne == LengthOfLineTwo) {
 			System.out.println("The two lengths are equal");
+		} else if (LengthOfLineOne > LengthOfLineTwo) {
+			System.out.println("The length of line one is greater than length of line two");
+		} else if (LengthOfLineOne < LengthOfLineTwo) {
+			System.out.println("The length of line one is less than length of line two");
 		} else {
-			System.out.println("The two lengths are not equal");
+			System.out.println("no use");
 		}
-
 	}
 
 }
